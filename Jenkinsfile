@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'Creating virtual environment...'
                 bat 'python -m venv venv'
-                bat 'venv\\Scripts\\pip install --upgrade pip'
                 bat 'venv\\Scripts\\pip install -r requirements.txt'
             }
         }
